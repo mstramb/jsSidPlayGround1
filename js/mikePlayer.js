@@ -31,7 +31,9 @@ plreq.onload = function() {
 // build the listbox / playlist
 //
  console.log("(mikePlayer.js)(plreq.onload) playlist.length: "  +playlist.length )
-    for (var i=0; i<playlist.length && playlist[i].length>2; i++) { 
+ 
+   for (var i=0; i<playlist.length && playlist[i].length>2; i++) { 
+     console.log(playlist[i].substr(0,playlist[i].lastIndexOf('.sid')+4) + " playlist[i].length" +  playlist[i].length)
        URLlist.push( playlist[i].substr(0,playlist[i].lastIndexOf('.sid')+4) );
 
      var p=playlist[i].lastIndexOf('/')+1; 
@@ -67,7 +69,7 @@ plreq.onload = function() {
      if(playstate) 
         loadtune(tuneid); 
     } // for (var i=0; i<playlist.length && playlist[i].length>2; i++) 
-   };  // plreq.onload
+   } ;  // plreq.onload
 
   plreq.send();
 
