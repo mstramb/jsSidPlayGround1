@@ -1,3 +1,7 @@
+//
+// Mar 9 - 2016
+// mike added functions for new html fields, gadgets etc 
+//
 console.log("(mike.js)")
 
 

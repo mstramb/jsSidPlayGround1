@@ -1,3 +1,6 @@
+//
+// code by Hermit, moved from the html page
+// 
 console.log("(mikePlayer.js)")
    var playstate=0; 
    var  advance=0; 
@@ -24,6 +27,10 @@ plreq.onload = function() {
    lengthlist.length=0; 
    subtlist.length=0;
 
+//
+// build the listbox / playlist
+//
+ console.log("(mikePlayer.js)(plreq.onload) playlist.length: "  +playlist.length )
     for (var i=0; i<playlist.length && playlist[i].length>2; i++) { 
        URLlist.push( playlist[i].substr(0,playlist[i].lastIndexOf('.sid')+4) );
 

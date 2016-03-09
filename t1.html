@@ -1,0 +1,73 @@
+<html>
+<title>(t1.html v 1.00) JsSid Player </title> 
+ <head>
+  <style type="text/css"> <!-- a {text-decoration:none; color:#C0C0C0;} a:hover {text-decoration:underline;} --></style>
+
+<!-- mike -->
+  <script type="text/javascript" src="js/SID-man3.js"></script>
+  <script type="text/javascript" src="js/mike1.js"></script>
+  <script type="text/javascript" src="js/mikePlayer.js"></script>
+ <!--  <script type="text/javascript" src="jsSID.js"></script> -->
+
+ <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<meta content="utf-8" http-equiv="encoding">
+
+ </head>
+ 
+ <body bgcolor="#000000" text="#CCCCCC" style="margin:20px;font-family:sans-serif;font-size:11pt">
+ 
+ <center>
+
+ <table id="playerui" bgcolor="#304040" width="460px" border="0" style="padding:6px;">
+  <tr><td>
+    <table border="0" style="white-space:nowrap;"> 
+    <td id="numdisp">.</td>
+    <td id="titledisp" align="center" bgcolor="#202020" width="100%" style="overflow:hidden;">...</td> 
+    <td id="prefmodeldisp" style="padding-left:5;"> </td>
+    <td style="padding-left:5;"> <span id="selsubt">1</span>/<span id="subtdisp">1</span> </td>
+    <td> <span id="playtimedisp" style="padding-left:5;">00:00</span><span id="lengthdisp"></span> </td>
+  </table>
+</td></tr>
+
+<!--  <tr><td> <marquee style="font-size:9pt;" id="infodisp" behavior="alternate" scrollamount="2">...</marquee> </td></tr> -->
+<tr><td> <span style="font-size:9pt;" id="infodisp" behavior="" scrollamount="0">...</span> </td></tr>
+  <tr><td align="center" style="white-space:nowrap;"> 
+
+   <button class="ctrl" id="playpause" style="width:30px;" onclick="if (playstate) {SIDplayer.pause();playstate=0;this.innerHTML='>';} else {SIDplayer.playcont();playstate=1;this.innerHTML='||';}">&gt</button> 
+   
+<button class="ctrl" onclick="SIDplayer.stop();playstate=0;document.getElementById('playpause').innerHTML='>';">stop</button> 
+   <button class="ctrl" onclick="if(st<SIDplayer.getsubtunes()-1) SIDplayer.start(++st);playstate=1; show_playlength(tuneid);">subtune +</button> 
+   <button class="ctrl" onclick="if(st>0) SIDplayer.start(--st); playstate=1; show_playlength(tuneid);">subtune -</button> 
+   <button class="ctrl" onclick="if(SIDplayer.getmodel()==8580) SIDplayer.setmodel(6581); else SIDplayer.setmodel(8580);this.innerHTML=SIDplayer.getmodel();">8580</button> 
+
+   <input class="ctrl" id="volslider" type="range" min="0" max="0.9" value="100" step="0.1" style="margin:0px;width:60px;vertical-align:middle;"
+    oninput="SIDplayer.setvolume(Math.log(1-value)/-2.3);" onchange="SIDplayer.setvolume(Math.log(1-value)/-2.3);"> 
+   </input> 
+  </td></tr>
+  <tr><td bgcolor="#101010"> <ol id="playlistui" style="height:400px; overflow:hidden; overflow-y:scroll; list-style:normal; margin:2px; white-space:nowrap;">
+   <!--playlist is populated by javascript code-->
+  </ol> </td></tr>
+  <tr><td bgcolor="#203030"><table border="0" width="100%">
+   <tr> 
+    <!-- <td> <input type="file" multiple="multiple" style="width:120px;"></input> </td> -->
+    
+	<td> <button onclick="advance^=1; show_advance();">AutoAdvance</button><span id="autoadvdisp"></span> </td>
+  
+<!-- mike -->  
+  <tr><td> <button onclick="SIDplayer.playcont()">playContinue</button></td>
+      <td> <button onclick="SIDplayer.pause()">pause</button></td>
+      <td> <button onclick="SIDplayer.mikeDump1()">mikeDump1</button></td>
+      <td> <button onclick="SIDplayer.mikePatch1()">mikePatch1</button></td>
+  </tr>
+<tr><td><span>ShowAddr:</span></td><td> <input type="text" id="inputMemAddr" value="0000"></input></td> <td> <span id="showmem">????</span></td> </tr>
+<tr><td>Data:</td><td><input type="text" id="inputData" value="0000"></input> </td></tr>
+    <td align="right" style="vertical-align:bottom;font-size:8pt;"> 
+     <a href="http://hermit.sidrip.com" target="blank">jsSID player by Hermit</a> </td> </tr>
+  </table></td></tr>
+
+ </table>
+
+</center>  
+ </body>
+ 
+</html>
