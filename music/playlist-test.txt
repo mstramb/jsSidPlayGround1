@@ -1,0 +1,6 @@
+music/sid/tester.sid 1:00
+music/sid/one.sid 1:00
+music/sid/do-re-mi-02.sid 1:00
+music/Misunderstandings.sid 5:00
+music/The_Game_of_Life.sid 5:00
+music/Ill_Be_a_Pimp_in_Cabrini_Green_when_I_grow_up.sid 5:00
