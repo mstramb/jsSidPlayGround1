@@ -861,39 +861,39 @@ function jsSID (bufferlen, background_noise)
 //  var
   this.SID_FreqLo1 = 0xD400
   this.SID_FreqHi1 = 0xD401
-      this.SID_pwml1   = 0xD402
-      this.SID_pwmh1   = 0xD403
-      this.SID_ctrl1   = 0xD404
-      this.SID_ad1     = 0xD405
-      this.SID_sr1     = 0xD406
+  this.SID_pwml1   = 0xD402
+  this.SID_pwmh1   = 0xD403
+  this.SID_ctrl1   = 0xD404
+  this.SID_ad1     = 0xD405
+  this.SID_sr1     = 0xD406
 
- 	    this.SID_FreqLo2 = 0xD407
-      this.SID_FreqHi2 = 0xD408
-      this.SID_pwml2   = 0xD409
-      this.SID_pwmh2   = 0xD40A
-      this.SID_ctrl2   = 0xD40B
-      this.SID_ad2     = 0xD40C
-      this.SID_sr2     = 0xD40D
+  this.SID_FreqLo2 = 0xD407
+  this.SID_FreqHi2 = 0xD408
+  this.SID_pwml2   = 0xD409
+  this.SID_pwmh2   = 0xD40A
+  this.SID_ctrl2   = 0xD40B
+  this.SID_ad2     = 0xD40C
+  this.SID_sr2     = 0xD40D
 
- 	    this.SID_FreqLo3 = 0xD40E
-      this.SID_FreqHi3 = 0xD40F
-      this.SID_pwml3   = 0xD410
-      this.SID_pwmh3   = 0xD411
-      this.SID_ctrl3   = 0xD412
-      this.SID_ad3     = 0xD413
-      this.SID_sr3     = 0xD414
+  this.SID_FreqLo3 = 0xD40E
+  this.SID_FreqHi3 = 0xD40F
+  this.SID_pwml3   = 0xD410
+  this.SID_pwmh3   = 0xD411
+  this.SID_ctrl3   = 0xD412
+  this.SID_ad3     = 0xD413
+  this.SID_sr3     = 0xD414
 
-			this.SID_cutoffL = 0xD415
-			this.SID_cutoffH = 0xD416
+  this.SID_cutoffL = 0xD415
+  this.SID_cutoffH = 0xD416
 
-			this.SID_res_fltv = 0xD417
-			this.SID_pass_vol = 0xD418
+  this.SID_res_fltv = 0xD417
+  this.SID_pass_vol = 0xD418
 
-			this.SID_potx  = 0xD419
-  		this.SID_poty  = 0xD41A
+  this.SID_potx  = 0xD419
+  this.SID_poty  = 0xD41A
 
-			this.SID_noise = 0xD41B
-			this.SID_env3  = 0xD41C
+  this.SID_noise = 0xD41B
+  this.SID_env3  = 0xD41C
 
   // v1
  // 0:freql1
